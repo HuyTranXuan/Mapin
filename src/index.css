@@ -1,0 +1,229 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+.mocked-point-button {
+  border: none;
+  border-radius: 12px;
+  padding: 0.6em 1.2em;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: inherit;
+  background-color: #eff2f7;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  top: 97px;
+  left: 99px;
+}
+.mocked-point-button:hover {
+  background-color: #dee2e9;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  border-radius: 2rem 2rem 0 0;
+}
+
+.select {
+  font-weight: 400;
+  font-size: 15px;
+  border-radius: 12px;
+  border-color: #eff2f7;
+  padding: 9px 12px;
+  background-color: #eff2f7;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url('data:image/svg+xml,<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M10.4697 5.53033C10.7626 5.82323 11.2374 5.82323 11.5303 5.53033C11.8232 5.23744 11.8232 4.76256 11.5303 4.46967L9.23744 2.17678C8.55402 1.49336 7.44598 1.49336 6.76256 2.17678L4.46967 4.46967C4.17678 4.76256 4.17678 5.23744 4.46967 5.53033C4.76256 5.82322 5.23744 5.82322 5.53033 5.53033L7.82322 3.23744C7.92085 3.13981 8.07915 3.13981 8.17678 3.23744L10.4697 5.53033ZM5.53033 10.4697C5.23744 10.1768 4.76256 10.1768 4.46967 10.4697C4.17678 10.7626 4.17678 11.2374 4.46967 11.5303L6.76256 13.8232C7.44598 14.5066 8.55402 14.5066 9.23744 13.8232L11.5303 11.5303C11.8232 11.2374 11.8232 10.7626 11.5303 10.4697C11.2374 10.1768 10.7626 10.1768 10.4697 10.4697L8.17678 12.7626C8.07915 12.8602 7.92085 12.8602 7.82322 12.7626L5.53033 10.4697Z" fill="%23262626"/></svg>');
+  background-repeat: no-repeat;
+  background-position-x: 95%;
+  background-position-y: 8px;
+  cursor: pointer;
+}
+
+.year-select {
+  background-image: url('data:image/svg+xml,<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6.66675 1.66666V4.16666" stroke="%23262626" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/><path d="M13.3333 1.66666V4.16666" stroke="%23262626" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/><path d="M2.91675 7.57498H17.0834" stroke="%23262626" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/><path d="M17.5 7.08332V14.1667C17.5 16.6667 16.25 18.3333 13.3333 18.3333H6.66667C3.75 18.3333 2.5 16.6667 2.5 14.1667V7.08332C2.5 4.58332 3.75 2.91666 6.66667 2.91666H13.3333C16.25 2.91666 17.5 4.58332 17.5 7.08332Z" stroke="%23262626" strokeWidth="1.5" strokeMiterlimit="10" strokeLinecap="round" strokeLinejoin="round"/><path d="M13.0788 11.4167H13.0863" stroke="%23262626" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M13.0788 13.9167H13.0863" stroke="%23262626" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M9.99632 11.4167H10.0038" stroke="%23262626" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M9.99632 13.9167H10.0038" stroke="%23262626" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M6.91185 11.4167H6.91933" stroke="%23262626" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><path d="M6.91185 13.9167H6.91933" stroke="%23262626" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/></svg>');
+}
+
+.category-select {
+  width: 170px;
+}
+
+.label-select {
+  width: 198px;
+}
+
+.attributes-button {
+  padding-right: 12px;
+}
+
+.small-selector-container {
+  font-weight: 400;
+  font-size: 12px;
+  padding-right: 17px;
+}
+
+.small-selector {
+  width: 115px;
+  height: 36px;
+  display: inline;
+  padding-right: 18px;
+}
+
+.small-input {
+  max-width: 91px;
+  height: 18px;
+  display: inline;
+  color: rgba(0, 0, 0, 0.4);
+  border: none;
+  background-image: none;
+  cursor: default;
+}
+
+.attributes-title {
+  padding-top: 5px;
+  padding-right: 12px;
+  display: inline;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 15px;
+  padding-left: 16px;
+  padding-top: 11px;
+}
+
+.small-button {
+  border: none;
+  border-radius: 12px;
+  padding: 0.6em 1.2em;
+  font-size: 15px;
+  font-weight: 500;
+  font-family: inherit;
+  color: #ffffff;
+  background-color: #007aff;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  height: 36px;
+  width: 103px;
+}
+.small-button:disabled,
+.small-button:disabled:hover {
+  color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.small-button:hover {
+  background-color: #1475de;
+}
+
+.more-settings {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.more-setting-title {
+  color: #007aff;
+  font-weight: 500;
+  font-size: 15px;
+  padding-left: 16px;
+  padding-top: 11px;
+  cursor: pointer;
+}
+
+.more-setting-icon {
+  color: #007aff;
+  padding-right: 10px;
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+.attributes {
+  width: 274px;
+  height: 452px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+  }
+}
+
+.modal {
+  position: absolute;
+  right: 1rem;
+  top: 1rem;
+  z-index: 500;
+  border-radius: 1rem;
+  background-color: #ffffff;
+  text-align: left;
+}
+
+.modal-item {
+  padding-top: 11px;
+  padding-left: 16px;
+}
+
+.hint-button {
+  padding-top: 14px;
+  padding-right: 12px;
+  cursor: pointer;
+}
+
+.hint-title {
+  font-weight: 700;
+  font-size: 17px;
+  padding-top: 18px;
+  padding-left: 8px;
+  display: inline;
+}
+
+.hint {
+  width: 274px;
+  height: 186px;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+  }
+  .text {
+    font-weight: 400;
+    font-size: 14px;
+    padding-top: 16px;
+    padding-left: 16px;
+  }
+  .location {
+    font-weight: 600;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-left: 16px;
+  }
+  .coordinate {
+    font-weight: 400;
+    font-size: 15px;
+    padding-top: 8px;
+    padding-left: 16px;
+  }
+}
