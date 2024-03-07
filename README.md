@@ -2,8 +2,8 @@
 
 2. Run:
 
-   - "docker build . -t 'mapin'"
+   - docker-compose build
 
-   - "docker run -p 8080:8080 mapin"
+   - docker-compose up
 
-3. The app can now be open via http://localhost:8080/
+3. The app can now be open and dev ready with hot update via http://localhost:8080/
